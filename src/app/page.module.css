@@ -1,0 +1,105 @@
+/* Global variables for light theme */
+.page {
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+  --button-primary-hover: #ffffff;
+  --button-secondary-hover: #000000;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Adjust rows to be more flexible */
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh; /* Use vh for full screen */
+  padding: 2rem; /* Adjust padding for better spacing */
+  gap: 2rem; /* Adjust gap between elements */
+  font-family: var(--font-geist-sans), sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+}
+
+/* Container styles */
+.container {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  padding: 2rem; /* Use rem for better scaling */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 1200px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem; /* Adjust margin for better spacing */
+}
+
+.title {
+  font-size: 2.25rem; /* Use rem for better scaling */
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Main content area */
+.main {
+  width: 100%;
+  padding: 1.25rem; /* Use rem for consistent scaling */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.875rem; /* Adjust font size for smaller screens */
+    letter-spacing: 0.5px;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .page {
+    padding: 1.5rem; /* Adjust padding for mobile view */
+    gap: 1.5rem; /* Smaller gap on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+
+  .container {
+    padding: 0.5rem; /* Reduce padding for very small screens */
+  }
+
+  .page {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

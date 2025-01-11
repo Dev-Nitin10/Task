@@ -1,0 +1,139 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4A90E2;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+.dropdown,
+.searchBox {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 0.5rem;
+}
+
+.pagination a {
+  border-radius: 4px;
+  color: #4A90E2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.active a {
+  background-color: #4A90E2;
+  color: white;
+  padding: 7px;
+}
+
+.chartContainer {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.statsSection {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statsHeading {
+    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4A90E2;
+  }
+  
+  .statsContainer {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .statsCard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .statsCard h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .statsCard p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }

@@ -49,7 +49,7 @@ const TableAndChart = () => {
   useEffect(() => {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/roxiler.com/product_transaction.json"
+        "https://raw.githubusercontent.com/Dev-Nitin10/DataVisualization/refs/heads/main/data.json"
       )
       .then((response) => {
         setData(response.data);
